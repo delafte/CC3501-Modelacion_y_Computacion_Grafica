@@ -18,7 +18,6 @@ from grafica.assets_path import getAssetPath
 from OpenGL.GL import *
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-# A class to store the application control
 
 # Se asigna el ancho y alto de la ventana y se crea.
 WIDTH, HEIGHT = 1280, 800
@@ -229,8 +228,6 @@ def CreateScene(naveShape):
 escena = CreateScene(naveshape)
 camera= camara()
 
-# Esta función se ejecuta aproximadamente 60 veces por segundo, dt es el tiempo entre la última
-# ejecución y ahora
 def update(dt, window):
     window.total_time += dt
 
@@ -321,10 +318,10 @@ def on_draw():
 
     naveshape.y_direction_rot = 0
     navesombra.y_direction_rot = 0
-    # Drawing the scene
+
     sg.drawSceneGraphNode(escena, controller.pipeline, "model")
 
-# Try to call this function 60 times per second
+
 pyglet.clock.schedule(update, controller)
 # Se ejecuta la aplicación
 pyglet.app.run()
