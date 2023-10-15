@@ -3,6 +3,6 @@ In this repository i have the assignments i did for the CC3501 course during the
 
 The "grafica" directory has files that were given to us in the course for us to work with.
 
-#### For those i used:
+#### I used:
 ![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)&nbsp;
 ![Blender](https://img.shields.io/badge/-Blender-05122A?style=flat&logo=blender)&nbsp;
